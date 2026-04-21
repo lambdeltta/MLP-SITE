@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRAMEWORK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <script>
+ <audio id="myAudio" src="https://www.youtube.com/watch?v=IRlzrnBi_eE"></audio>
+ (function() {
+   var audio = document.getElementById("myAudio");
+   audio.play();
+ })();
+
+  </script>
+    <style>
+
+        #cabeca {
+            background-color: rgb(228 33 119);
+            border: solid 3px;
+        }
+
+        #sitefundo {
+            background-image: url(https://wallpapercave.com/wp/aTMhQeL.jpg);
+            background-size: contain;
+            background-position: center 90px;
+            border: solid 6px;
+            color: rgb(122 16 110);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            min-height: 100vh;
+            font-size: 30px;
+            background-repeat: no-repeat;
+        }
+        
+        #bgfortxt {
+            background-color: rgb(62 19 102); 
+            border: solid 3px;
+            color: rgb(247, 171, 243);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            height: 70px;
+            font-size: 40px;
+            
+
+        }
+        
+        body {
+    background-color: #2f162a;
+    border: solid 4px;
+    border-color: rgb(62 19 102);
+}
+
+        footer {
+            background-color: #f8f8f8;
+            border: solid 4px;
+            border-color: #5a104b;
+            color: rgb(255, 0, 157);
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            text-decoration: underline;
+        }
+    </style>
+
+<div id="sitefundo">
+
+    <nav class="navbar" id="cabeca" class="cabeca" data-bs-toggle="light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://1000logos.net/wp-content/uploads/2020/09/My-Little-Pony-Logo-2010-500x333.png" alt="logo" height="60">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contato.html">PRIMEIRA PÁGINA / CONTATO  </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="elementos.html">SEGUNDA PÁGINA / ELEMENTOS   </a>
+            </li>
+            <li class="nav-dropdown">
+              <a class="nav-link dropdown-toggle" aria-expanded="false">Barra de Pesquisa</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+</div>
+</body>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 My Little Pony. Todos os Direitos Reservados.</p>
+    </div>
+</footer>
+
+</html>
