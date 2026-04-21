@@ -3,20 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRAMEWORK</title>
+    <title>My Little Pony - Os Bons Feitos da Comunidade</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <script>
- <audio id="myAudio" src="https://www.youtube.com/watch?v=IRlzrnBi_eE"></audio>
- (function() {
-   var audio = document.getElementById("myAudio");
-   audio.play();
- })();
-
-  </script>
     <style>
 
         #cabeca {
@@ -25,33 +18,25 @@
         }
 
         #sitefundo {
+
             background-image: url(https://wallpapercave.com/wp/aTMhQeL.jpg);
             background-size: contain;
             background-position: center 90px;
+            background-repeat: no-repeat;
+
             border: solid 6px;
             color: rgb(122 16 110);
             font-family: 'Comic Sans MS', cursive, sans-serif;
             min-height: 100vh;
             font-size: 30px;
-            background-repeat: no-repeat;
         }
-        
-        #bgfortxt {
-            background-color: rgb(62 19 102); 
-            border: solid 3px;
-            color: rgb(247, 171, 243);
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            height: 70px;
-            font-size: 40px;
-            
 
-        }
-        
+
         body {
-    background-color: #2f162a;
-    border: solid 4px;
-    border-color: rgb(62 19 102);
-}
+            background-color: #2f162a;
+            border: solid 4px;
+            border-color: rgb(62 19 102);
+        }
 
         footer {
             background-color: #f8f8f8;
@@ -65,13 +50,90 @@
             text-align: center;
             text-decoration: underline;
         }
-    </style>
 
+        h3 {
+            text-align: center;
+            color: rgb(255, 0, 157);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: xx-large;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(255, 143, 212);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: larger;
+        }
+        
+        hr {
+            border: dashed 3px;
+            border-color: rgb(165, 11, 147);
+        }
+
+        a {
+            color: rgb(111, 0, 255);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(111, 0, 255);
+            text-decoration: underline;
+        }
+        
+        b {
+          color: #6808a0;
+        }
+
+        .topico-img {
+            display: block;
+            margin: 16px auto;
+            max-width: 500px;
+            width: 90%;
+            border: ridge 3px rgb(228 33 119);
+        }
+
+          .boasvindas-img {
+            display: block;
+            margin: 12px auto;
+            width: 656px;
+            border: ridge 3px rgb(228 33 119);
+            height: 350px;
+          }
+
+
+        /* button de search q ta dentro do navbar */
+        .btn-outline-success {
+            border-color: rgb(228 33 119);
+            color: rgb(255, 255, 255);
+            background-color:rgb(77, 12, 71);
+        }
+
+        .btn:hover {
+            background-color:rgb(77, 12, 71);
+            color: rgb(255, 255, 255);
+            border-color: rgb(122 16 110);
+        }
+
+        .btn-outline-success:hover {
+            background-color:rgb(77, 12, 71);
+            color: rgb(255, 255, 255);
+            border-color: rgb(122 16 110);
+        }
+          /* UTILIZAR !Important para "sobrepor" atributo/propriedade irritante sempre */
+        .btn-outline-success:active {
+            background-color: rgb(77, 12, 71) !important;
+            border-color: rgb(122, 16, 110) !important;
+            color: rgb(255, 255, 255) !important;
+}
+    </style>
+    
+  <!-- bg -->
 <div id="sitefundo">
 
+  <!-- navbar do bootstrap -->
     <nav class="navbar" id="cabeca" class="cabeca" data-bs-toggle="light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="https://ponystrap.vercel.app/">
           <img src="https://1000logos.net/wp-content/uploads/2020/09/My-Little-Pony-Logo-2010-500x333.png" alt="logo" height="60">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,29 +142,139 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contato.html">PRIMEIRA PÁGINA / CONTATO  </a>
+              <a class="nav-link active" aria-current="page" href="contato.html">CONTATO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="elementos.html">SEGUNDA PÁGINA / ELEMENTOS   </a>
+              <a class="nav-link active" aria-current="page" href="elementos.html">ELEMENTOS</a>
             </li>
             <li class="nav-dropdown">
               <a class="nav-link dropdown-toggle" aria-expanded="false">Barra de Pesquisa</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Pesquisar"/>
+            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
           </form>
         </div>
       </div>
     </nav>
 </div>
-</body>
+
+<hr>
+<h3>Seja Bem-vindo(a)!</h3>
+<br>
+
+<h2> Você possivelmente já conhece ou ouviu dizer sobre "My Little Pony" mas você já conheceu a comunidade e seus bons feitos?... será oque estarei abordando ao decorrer da página! mas.. apenas os bons. (pelo menos por enquanto)</h2>
+<br>
+<img class="boasvindas-img"
+     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvdwvNOswMi8RNv5x9BgMYSsYgZC3ikQwqJQ&s"
+    alt="boasvindasimg">
+
+<h2>My Little Pony: Friendship is Magic é uma série animada produzida pela Hasbro que foi ao ar de 2010 a 2019. Criada por Lauren Faust, a série atraiu inesperadamente um grande público adulto na internet, formando uma das comunidades de fãs mais ativas da história recente - conhecidos como bronies, junção de "bro" e "pony".</h2>
+
+<br><br>
+
+<h3>Brony Thank You Fund - o primeiro fandom a virar ONG</h3>
+
+<img class="topico-img"
+     src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-wdkrDRW7l2RXw2-wR8ZmlQJJolx9dfM7rnHd_RSsjb2lbIiEEuGbINnQ6a1sxjyKtkfVAuFGn1fvkxpI0dhr4N1YyodaW1QD4S34DAXxQHb_WO3AyQwwwLYmj8GJ3JaYuG2OQbJoU2P7/s400/ThankYouBanner_Full.png"
+     alt="topico">
+
+<h2>
+  Criado em 2012 para financiar um anúncio de agradecimento aos criadores da série, o "Brony Thank You Fund" arrecadou mais do que o necessário e redirecionou o excedente para o programa Toys for Tots. A organização tornou-se a primeira fandom ligada a uma mídia a conquistar o status 501C3 de organização sem fins lucrativos nos Estados Unidos. Em dezembro de 2013, doou US$ 50.000 para criar uma bolsa de estudos permanente em animação no California Institute of the Arts, chamada "Derpy Hooves Scholarship".
+  <br><br>
+ 
+</h2>
+
+<br>
+
+<h3>Bronies for Good - doações e campanhas de sangue</h3>
+
+<img  class="topico-img"
+      src="data:image/jpeg;base64,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" 
+      alt="topico">
+
+<h2>
+  Fundado em 2011, o grupo "Bronies for Good" coordenou campanhas de doação de sangue e arrecadou mais de US$ 60.000 em 2012 para instituições como "Children's Cancer Association", "Room to Read" e "CureSearch for Children's Cancer". Em dezembro daquele mesmo ano.
+  <br><br>
+</h2>
+
+<br>
+
+<h3>Apoio a fãs em situações críticas</h3>
+
+<h2>
+  Em janeiro de 2014, Michael Morones, de 11 anos da Carolina do Norte, tentou suicídio após ser intimidado na escola por assistir ao programa. A comunidade brony respondeu com uma campanha de arrecadação que levantou mais de US$ 48.000 em uma semana e superou US$ 72.000 em um mês. Infelizmente  Michael faleceu na quarta-feira de 27 de outubro em 2021, aos 19 anos de idade, em Raleigh, Na Carolina do Norte. 
+  <br><br>
+</h2>
+
+ <h3>Descanse em Paz Michael Morones</h3>
+<img class="topico-img"
+     src="assets/images/michael.jpg"
+     alt="Michael Morones">
+  <h3>Nunca Abandonado pela comunidade.</h3>
+
+  <br>
+<hr>
+
+
+<h3>Convenções e eventos beneficentes</h3>
+
+<img  class="topico-img"
+      src="data:image/png;base64,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" 
+      alt="topico">
+
+<h2>
+  As convenções de bronies, como o "BronyCon", incluíam leilões e eventos beneficentes. convenções chegaram a arrecadar dezenas de milhares de dólares para organizações como o "Seattle Children's Hospital" e o "CureSearch for Children's Cancer".
+  <br><br>
+</h2>
+
+<br>
+
+<h3>Estudos acadêmicos sobre o fandom</h3>
+
+<img  class="topico-img"
+      src="https://m.media-amazon.com/images/I/810Ugi9DUVL._UF1000,1000_QL80_.jpg" 
+      alt="topico">
+
+<h2>
+  O fandom brony foi alvo de extensas pesquisas acadêmicas em áreas como psicologia, sociologia e estudos de gênero. O Dr. Patrick Edwards, professor de psicologia do "Wofford College", conduziu o "Brony Study" entre 2012 e 2018, acompanhando a evolução da comunidade. Em 2012, pesquisas com até 9.000 participantes indicaram que a média de idade dos fãs adultos era de 21 anos, 86% eram do gênero masculino e 63% cursavam ou haviam cursado o ensino superior.
+  <br><br>
+</h2>
+
+  <br>
+
+<h3>Criatividade e cultura participativa</h3>
+
+<h2>
+  Acadêmicos caracterizaram o fandom brony como uma cultura participativa, onde os fãs criam ativamente conteúdo em vez de apenas consumir. A comunidade produziu músicas, animações, fan fictions e artes visuais, com alguns trabalhos atingindo qualidade profissional - como o jogo de luta "Fighting is Magic", que mais tarde evoluiu para "Them's Fightin' Herds". A personagem "Derpy Hooves", criada pelos fãs, chegou a ser incorporada oficialmente à série pela Hasbro.
+  <br><br>
+</h2>
+
+<h2>inclusive "Derpy Hooves" é a pony favorita daquele que escreve o site :-) </h2>
+<center><img src="https://img1.picmix.com/output/stamp/thumb/6/8/4/6/2876486_66e52.gif" height="60px; width: 40px; " </center>
+<br><br><br><br>
+
+<h2>Muito Obrigado pela atenção! e em breve estarei pesquisando e escrevendo a respeito das coisas RUINS que a comunidade enfrenta ou produziu, aguardem!. </h2>
+  <br><br>
+<hr>
+  <h2>Fontes:</h2>
+      <a href="https://abc7chicago.com/archive/9420438/" target="_blank">Eyewitness News - Sobre o caso de Michael Morones</a>  <b>|</b>
+      <a href="https://www.academia.edu/40197911/Meet_the_Bronies_The_Psychology_of_the_Adult_My_Little_Pony_Fandom" target="_blank">Academia- Meet the Bronies</a> <b>|</b>
+      <a href="https://www.equestriadaily.com/2024/10/brony-thank-you-fund-release-our-work.html" target="_blank">Equestria Daily - Brony Thank You Fund</a> <b>|</b>
+      <a href="https://blog.woodscyclecountry.com/toys-for-tots-2012/" target="_blank">Woods Cycle Country - Toys for Tots</a>
+      <a href="https://www.equestriadaily.com/2015/11/first-derpy-hooves-scholarship.html" target="_blank">Equestria Daily - First Derpy Hooves Scholarship</a>
+      <a href="https://broniesforgood.org/" target="_blank">Bronies for Good - Site Oficial</a> <b>|</b>
+      <a href="https://fightingismagic.com/">Fighting is Magic - Site Oficial</a>
+      <a href="https://fightingismagic.com/">Bronycon - Site Oficial (desativado no momento)</a>
+
+      
+  <br><br>
+<hr>
 
 <footer>
     <div class="container">
-        <p>&copy; 2026 My Little Pony. Todos os Direitos Reservados.</p>
-    </div>
+    <p>&copy; 2026 My Little Pony - Feito de fã para fãs - Não afiliado à Hasbro.</p>    </div>
 </footer>
 
 </html>

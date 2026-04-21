@@ -3,165 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRAMEWORK</title>
+    <title>My Little Pony - Elementos</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <style>
+
         #cabeca {
-
-            background-color: rgb(245, 22, 204); 
+            background-color: rgb(228 33 119);
             border: solid 3px;
         }
 
-        #bgfortxt {
-            background-color: rgb(130, 19, 110); 
-            border: solid 3px;
-            color: rgb(247, 171, 243);
+        #sitefundo {
+            background-image: url('https://images.alphacoders.com/512/thumb-1920-512795.jpg');
+            background-size: contain;
+            background-position: center 90px;
+            background-repeat: no-repeat;
+            border: solid 6px;
+            color: rgb(122 16 110);
             font-family: 'Comic Sans MS', cursive, sans-serif;
-            height: 70px;
-            font-size: 40px;
-            
-
+            min-height: 100vh;
+            font-size: 30px;
         }
 
-        #title {
-            color: rgb(0, 0, 0);
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            font-size: 70px;
+        body {
+            background-color: #2f162a;
+            border: solid 4px;
+            border-color: rgb(62 19 102);
+        }
+
+        footer {
+            background-color: #f8f8f8;
+            border: solid 4px;
+            border-color: #5a104b;
+            color: rgb(255, 0, 157);
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
             text-align: center;
+            text-decoration: underline;
         }
 
-          #descslide {
-            color: rgb(0, 0, 0);
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            height: 30px;
-            font-size: 20px;
+        h3 {
             text-align: center;
+            color: rgb(255, 0, 157);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: xx-large;
         }
-        
-          #carouselExampleDark {
+
+        h2 {
+            text-align: center;
+            color: rgb(255, 143, 212);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: larger;
+        }
+
+        hr {
+            border: dashed 3px;
+            border-color: rgb(165, 11, 147);
+        }
+
+        a {
+            color: rgb(111, 0, 255);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(111, 0, 255);
+            text-decoration: underline;
+        }
+
+        b {
+          color: #6808a0;
+        }
+
+        .topico-img {
+            display: block;
+            margin: 16px auto;
+            max-width: 500px;
+            width: 90%;
+            border: ridge 3px rgb(228 33 119);
+        }
+
+        .boasvindas-img {
+            display: block;
+            margin: 12px auto;
+            width: 656px;
+            border: ridge 3px rgb(228 33 119);
+            height: 350px;
+        }
+
+        .btn-outline-success {
+            border-color: rgb(228 33 119);
+            color: rgb(255, 255, 255);
+            background-color: rgb(77, 12, 71);
+        }
+
+        .btn:hover {
+            background-color: rgb(77, 12, 71);
+            color: rgb(255, 255, 255);
+            border-color: rgb(122 16 110);
+        }
+
+        .btn-outline-success:hover {
+            background-color: rgb(77, 12, 71);
+            color: rgb(255, 255, 255);
+            border-color: rgb(122 16 110);
+        }
+
+        .btn-outline-success:active {
+            background-color: rgb(77, 12, 71) !important;
+            border-color: rgb(122, 16, 110) !important;
+            color: rgb(255, 255, 255) !important;
+        }
+
+        .meu-carousel {
             width: 50%;
             margin: 0 auto;
         }
 
-          .carousel-item img {
+        .meu-carousel .carousel-item img {
             width: 100%;
             height: 700px;
             object-fit: fill;
             padding: 3px;
             background-color: #f516cc;
-            border: 4px solid;
-            border-color: #000000;
+            border: 4px solid #000000;
         }
-        
 
     </style>
 
-
-    <nav class="navbar" id="cabeca" class="cabeca"data-bs-toggle="light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="contato.html">PRIMEIRA PÁGINA / CONTATO  </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="elementos.html">SEGUNDA PÁGINA / ELEMENTOS   </a>
-        </li>
-        
-        <li class="nav-dropdown">
-          <a class="nav-link dropdown-toggle " aria-expanded="false">Barra de Pesquisa</a>
-        </li>
-      </ul>
-
-      
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-
-
-        <div id="title"> Mane Six</div>
-<hr>
-<br>
-
-<div id="carouselExampleDark" class="carousel carousel-dark slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-  </div>
-
-  <div class="carousel-inner">
-
-    <div class="carousel-item active" data-bs-interval="3000">
-      <img src="assets/images/ap.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-          <h5>Apple Jack</h5>
-      </div>
+    <!-- bg -->
+    <div id="sitefundo">
+        <nav class="navbar" id="cabeca" class="cabeca" data-bs-toggle="light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://ponystrap.vercel.app/">
+                    <img src="https://1000logos.net/wp-content/uploads/2020/09/My-Little-Pony-Logo-2010-500x333.png" alt="logo" height="60">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">INTRODUÇÃO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contato.html">CONTATO</a>
+                        </li>
+                        <li class="nav-dropdown">
+                            <a class="nav-link dropdown-toggle" aria-expanded="false">Barra de Pesquisa</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Pesquisar"/>
+                        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </div>
 
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="assets/images/fl.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Fluttershy</h5>
-      </div>
+    <hr>
+
+    <h3>Personagens</h3>
+    <br>
+    <h2>Nessa Seção poderemos observar alguns dos personagens da série! A Lista é extensa então tentarei atualizar quanto antes.</h2>
+    <br>
+
+    <!-- ===== CAROUSEL 1: Mane Six ===== -->
+    <h3>Mane Six</h3>
+    <br>
+
+    <div id="carousel1" class="carousel carousel-dark slide meu-carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="assets/images/ap.jpg" class="d-block w-100" alt="Applejack">
+                <div class="carousel-caption d-none d-md-block"><h5>Apple Jack</h5></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/images/fl.jpg" class="d-block w-100" alt="Fluttershy">
+                <div class="carousel-caption d-none d-md-block"><h5>Fluttershy</h5></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/images/pp.jpg" class="d-block w-100" alt="Pinkie Pie">
+                <div class="carousel-caption d-none d-md-block"><h5>Pinkie Pie</h5></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/images/rb.jpg" class="d-block w-100" alt="Rainbow Dash">
+                <div class="carousel-caption d-none d-md-block"><h5>Rainbow Dash</h5></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/images/ry.jpg" class="d-block w-100" alt="Rarity">
+                <div class="carousel-caption d-none d-md-block"><h5>Rarity</h5></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/images/tw.jpg" class="d-block w-100" alt="Twilight Sparkle">
+                <div class="carousel-caption d-none d-md-block"><h5>Twilight Sparkle</h5></div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="assets/images/pp.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Pinkie Pie</h5>
-      </div>
+    <br><br>
+
+    <!-- ===== CAROUSEL 2: Cutie Mark Crusaders ===== -->
+    <h3>Cutie Mark Crusaders</h3>
+    <br>
+
+    <div id="carousel2" class="carousel carousel-dark slide meu-carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="assets/images/ab.png" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block"><h5>Applebloom</h5></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/images/sb.jpg" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block"><h5>Sweetie Belle</h5></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/images/st.jpg" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block"><h5>Scootaloo</h5></div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="assets/images/rb.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Rainbow Dash</h5>
-      </div>
-    </div>
+    <br><br>
 
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="assets/images/ry.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Rarity</h5>
-      </div>
-    </div>
-
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="assets/images/tw.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Twilight Sparkle</h5>
-      </div>
-    </div>
-
-  </div>
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 My Little Pony - Feito de fã para fãs - Não afiliado à Hasbro.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
